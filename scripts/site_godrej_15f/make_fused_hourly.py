@@ -9,7 +9,7 @@ from constants import SITE_ID
 
 
 def build_fused_hourly(project_root: Path) -> None:
-    """Build monthly hourly fused outputs for the configured site."""
+    """Build hourly fused outputs for the configured site."""
 
     site_root = project_root / SITE_ID
     raw = site_root / "raw"
