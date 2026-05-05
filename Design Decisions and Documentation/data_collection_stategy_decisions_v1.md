@@ -283,7 +283,7 @@ One line = one weather sensor event.
 ## 7.3 `raw/image_manifest.jsonl`
 
 This file stores metadata about each captured image.
-The image itself is stored separately as a `.jpg` file under `raw/images/...`.
+The image itself is stored separately as a `.jpg` file under `site_godrej_15f/raw/images/...`.
 
 ### Schema
 
@@ -309,7 +309,7 @@ By storing only the relative path, the same metadata remains valid on both machi
 ### Example
 
 ```json
-{"image_id":"img_000001","site_id":"site_godrej_15f","device_id":"cam_01","timestamp_utc":"2026-05-04T06:00:00Z","timestamp_local":"2026-05-04T11:30:00+05:30","filename":"img_2026-05-04T06-00-00Z.jpg","relative_path":"raw/images/2026-05-04/img_2026-05-04T06-00-00Z.jpg","width_px":1920,"height_px":1080,"capture_status":"ok"}
+{"image_id":"img_000001","site_id":"site_godrej_15f","device_id":"cam_01","timestamp_utc":"2026-05-04T06:00:00Z","timestamp_local":"2026-05-04T11:30:00+05:30","filename":"img_2026-05-04T06-00-00Z.jpg","relative_path":"site_godrej_15f/raw/images/2026-05-04/img_2026-05-04T06-00-00Z.jpg","width_px":1920,"height_px":1080,"capture_status":"ok"}
 ```
 
 ---
