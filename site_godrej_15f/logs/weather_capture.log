@@ -1,0 +1,4 @@
+2026-05-04 00:00:00 INFO Weather capture service started
+2026-05-04 12:00:00 INFO Read successful temperature=33.82 humidity=64.18 pressure=1002.46
+2026-05-04 18:00:00 INFO Read successful temperature=31.04 humidity=70.12 pressure=1003.09
+2026-05-04 23:55:00 INFO Weather capture service heartbeat OK

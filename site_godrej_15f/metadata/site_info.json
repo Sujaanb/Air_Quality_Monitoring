@@ -1,0 +1,12 @@
+{
+  "site_id": "site_godrej_15f",
+  "site_name": "Godrej Genesis 15F Pilot Site",
+  "location_name": "Godrej Genesis, College More, Bidhannagar Sector V, Kolkata, West Bengal, India",
+  "latitude": 22.5788,
+  "longitude": 88.4348,
+  "floor_level": 15,
+  "deployment_environment": "windowside_semi_outdoor",
+  "camera_view_description": "Fixed outward-facing skyline view near the 15th-floor windowpane",
+  "installation_date": "2026-05-04",
+  "notes": "Demo dataset and folder structure for GitHub test run."
+}

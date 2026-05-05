@@ -1,0 +1,4 @@
+2026-05-04 00:00:00 INFO PM capture service started
+2026-05-04 08:30:10 INFO Read successful pm25=49.21 pm10=77.34
+2026-05-04 19:10:20 INFO Read successful pm25=57.02 pm10=86.77
+2026-05-04 23:59:50 INFO PM capture service heartbeat OK

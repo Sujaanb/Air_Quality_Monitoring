@@ -1,0 +1,32 @@
+[
+  {
+    "device_id": "cam_01",
+    "device_type": "camera",
+    "model_name": "Raspberry Pi Camera Module V2",
+    "manufacturer": "Raspberry Pi",
+    "communication_interface": "CSI",
+    "sampling_interval_sec": 300,
+    "status": "planned",
+    "notes": "Daytime-only capture every 5 minutes."
+  },
+  {
+    "device_id": "pm_01",
+    "device_type": "pm_sensor",
+    "model_name": "PMS7003",
+    "manufacturer": "Plantower",
+    "communication_interface": "UART",
+    "sampling_interval_sec": 10,
+    "status": "planned",
+    "notes": "Continuous 24x7 PM2.5 and PM10 logging."
+  },
+  {
+    "device_id": "wx_01",
+    "device_type": "weather_sensor",
+    "model_name": "BME280",
+    "manufacturer": "Bosch",
+    "communication_interface": "I2C",
+    "sampling_interval_sec": 300,
+    "status": "planned",
+    "notes": "Continuous 24x7 local temperature, humidity, and pressure logging."
+  }
+]
