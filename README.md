@@ -53,14 +53,29 @@ Air_Quality_Monitoring/
   requirements.txt
 ```
 
-## Workflow
+## Setup
 
-1. Open a terminal in the `Air_Quality_Monitoring` project root.
-2. Run `python scripts/init_project_config.py`.
-3. Run `python scripts/site_godrej_15f/run_all.py`.
-4. Monthly fused CSV and Parquet files are created under:
-   - `site_godrej_15f/fused/fused_5min/`
-   - `site_godrej_15f/fused/fused_hourly/`
+Start from a fresh clone of the repository:
+
+```bash
+git clone https://github.com/Sujaanb/Air_Quality_Monitoring.git
+cd Air_Quality_Monitoring
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python scripts/init_project_config.py
+```
+
+Then run the full fusion pipeline:
+
+```bash
+python scripts/site_godrej_15f/run_all.py
+```
+
+Fused CSV and Parquet files are created under:
+
+- `site_godrej_15f/fused/fused_5min/`
+- `site_godrej_15f/fused/fused_hourly/`
 
 ## Scripts
 
@@ -68,8 +83,8 @@ The site-specific scripts live under `scripts/site_godrej_15f/` and load the pro
 
 - `constants.py` contains stable site settings such as `SITE_ID`.
 - `common.py` contains shared file-loading and config-resolution helpers.
-- `make_fused_5min.py` generates the monthly 5-minute fused outputs.
-- `make_fused_hourly.py` generates the monthly hourly fused outputs.
+- `make_fused_5min.py` generates the 5-minute fused outputs.
+- `make_fused_hourly.py` generates the hourly fused outputs.
 - `run_all.py` runs both fusion steps in sequence.
 
 The individual fusion scripts can also be run directly from the project root:
@@ -96,7 +111,7 @@ That file is the single source of truth for the rest of the pipeline. If the top
 
 ## Outputs
 
-The fusion scripts regenerate the monthly partitioned outputs:
+The fusion scripts regenerate the partitioned outputs:
 
 - `site_godrej_15f/fused/fused_5min/YYYY-MM.csv`
 - `site_godrej_15f/fused/fused_5min/YYYY-MM.parquet`
